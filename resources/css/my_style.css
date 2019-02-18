@@ -8,16 +8,12 @@
 .links{
     max-width: 70%;
     text-align: center;
+    color: whitesmoke;
     margin: 0 auto;
     padding: 3px;
     max-height: 20%;
 
 }
-
-.text{
-
-}
-
 .picture{
     text-align: left;
 }
