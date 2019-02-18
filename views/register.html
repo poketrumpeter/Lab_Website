@@ -20,11 +20,11 @@
 		<form action="home.html">
 			<!--
 				Todo: Create a form with the following fields:
-					1. Name Text Field
-					2. Email Text Field
-					3. Password Text Field
-					4. Password Confirmation Text Field
-					5. Email Text Field
+					1. Name Text Field - DONE
+					2. Email Text Field - DONE
+					3. Password Text Field - DONE
+					4. Password Confirmation Text Field - DONE
+					5. Email Text Field - DONE
 					6. CU Boulder Alumni Radio Button
 					7. CU Boulder Student Radio Button
 					8. CU Boulder Undergrad/Grad Radio Button
@@ -33,8 +33,57 @@
 					11. Submit Button (links to home page)
 
 			-->
+			<label for="input-id">Name: </label>
+			<input type="text" id="input-id" name="name-field" placeholder="John Doe">
 
-			<input type="submit" value="submit" class="btn btn-primary btn-block">
+			<br>
+
+			<label for = "input-email">Email: </label>
+			<input type="text" id="input-email" name = "email-field" placeholder="John.Doe@gamil.com">
+
+			<br>
+
+			<label for = "input-password">Password: </label>
+			<input type="password" id="input-password" name="password-field" placeholder="********">
+
+			<br>
+
+			<label for = "password-confirmation">Confirm Password</label>
+			<input type="password" id="password-confirmation" name="password-confirmation" placeholder="********">
+
+			<br>
+
+			<input type="radio" name="choice" value="cu-boulder-student" checked> CU Boulder Student
+			<input type="radio" name="choice" value="cu-boulder-alumni"> CU Boulder Alumni
+
+			<br>
+			<br>
+
+			<h4>Student Status</h4>
+			<input type="radio" name="status" value="cu-boulder-undergrad" checked>CU Boulder Undergrad
+			<select name="Undergrad-choice">
+				<option selected>Select your Undergrad status</option>
+				<option value="Freshman">Freshman</option>
+				<option value="Sophomore">Sophomore</option>
+				<option value="Junior">Junior</option>
+				<option value="Senior">Senior</option>
+			</select>
+
+			<br>
+			<br>
+
+			<input type="radio" name="status" value="cu-boulder-graduate-student">CU Boulder Graduate Student
+			<select name = "Graduate-Choice">
+				<option>Select your Graduate status</option>
+				<option class= "form-check" value="MA">MA</option>
+				<option value="MBA">MBA</option>
+				<option value="PhD">PhD</option>
+			</select>
+
+			<br>
+			<br>
+
+			<input type="submit" value="Submit Registration" class="btn btn-primary btn-block">
 		</form>
 	</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
